@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Buddy</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet"/>
+
+
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <a href="http://hibuddy.mobi/"><img alt="logo" class="logo" src="http://movie.cinemahall.mobi/buddy/logo.svg"></a>
+</div>
+
+<div class="updateProfile">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="profile-update"><p class="pu-title"><b>Registration Form</b></p>
+                    <form enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label class="input_label"> <b>Full Name</b></label>
+                            <input name="user_name" class="form-control" autocomplete="off" type="text"
+                                   placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="input_label"><b> Date of birth</b> </label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="input_label"> <b>Mobile Number</b> </label>
+                            <input name="mobile_no" class="form-control" autocomplete="off" type="number"
+                                   placeholder="Enter your Mobile Number">
+                        </div>
+                        <div class="form-group">
+                            <label class="input_label"><b> Select your gender</b> </label>
+                            <div class="col">
+                                <div class="selectGender">
+                                    <div class="genInput">
+                                        <input name="gender" id="male" type="radio" value="male">
+                                        <label for="male">Male</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="selectGender">
+                                    <div class="genInput">
+                                        <input name="gender" id="female" type="radio" value="Female">
+                                        <label for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-right" style="margin-bottom: 0;">
+                            <button class="btn update-btn btn-primary btn-sm" type="submit"> Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

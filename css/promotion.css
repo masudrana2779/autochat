@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: -webkit-gradient(linear, left bottom, left top, from(#f034a2), to(#f3705e)) no-repeat fixed;
+    background: -webkit-linear-gradient(bottom, #f034a2, #f3705e) no-repeat fixed;
+    background: -o-linear-gradient(bottom, #f034a2, #f3705e) no-repeat fixed;
+    background: linear-gradient(0deg, #f034a2, #f3705e) no-repeat fixed;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tc {
+    text-align: center;
+}
+
+.logo {
+    max-width: 122px;
+    width: 100%;
+}
+
+.sg {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.selectGender {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.selectGender .genInput {
+    margin: 0 20px;
+}
+
+.selectGender .genInput input[type="radio"] {
+    display: none;
+}
+
+.selectGender .genInput label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.selectGender .genInput label:before {
+    position: absolute;
+    content: "";
+    bottom: 3px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.selectGender .genInput label span {
+    display: block;
+}
+
+.selectGender .genInput label .icon {
+    background: #fff;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.selectGender .genInput label .icon img {
+    max-width: 100px;
+    width: 100%;
+}
+
+.selectGender .genInput label .text {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.selectGender .genInput input[type="radio"]:checked + label:before {
+    background: #fff;
+}
+
+.chatBox {
+    background: #e9ecf5;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+.chatBox ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.chatBox ul li + li {
+    margin-top: 30px;
+}
+
+.chatBox ul li.active {
+    display: none;
+}
+
+.chatBox ul li .chatInner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.chatBox ul li.time {
+    text-align: right;
+}
+
+.chatBox ul li:last-child {
+    margin-bottom: 0;
+}
+
+.chatBox ul li small span {
+    display: none;
+}
+
+.chatBox ul li small span + span {
+    display: block;
+}
+
+.chatBox ul li small span.active {
+    display: block;
+}
+
+.chatBox ul li small span.active + span {
+    display: none;
+}
+
+.chatBox ul li .chat {
+    width: 100%;
+    background: -webkit-linear-gradient(45deg, #ec0389, #f15c26);
+    background: -o-linear-gradient(45deg, #ec0389, #f15c26);
+    background: linear-gradient(45deg, #ec0389, #f15c26);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.chatBox ul li .chat:before {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-right: none;
+    border-left: 10px solid #f15c26;
+    right: -8px;
+}
+
+.chatBox ul li .chat p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.chatBox ul li .img {
+    padding-top: 10px;
+}
+
+.chatBox ul li .img img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid red;
+    padding: 2px;
+}
+
+.inputn {
+    margin-bottom: 20px;
+}
+
+.inputn input {
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+.chatBtn .btnChat {
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+.loading-dots {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.loading-dot {
+    -webkit-animation: d 1s infinite linear;
+    animation: d 1s infinite linear;
+    background-color: currentColor;
+    border-radius: 50%;
+    color: #7c98b6;
+    height: 10px;
+    width: 10px;
+    color: #e66e50;
+}
+
+.loading-dot-1 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    margin-right: .75em;
+}
+
+.loading-dot-2 {
+    -webkit-animation-delay: -.66s;
+    animation-delay: -.66s;
+    margin-right: .75em;
+}
+
+.loading-dot-3 {
+    -webkit-animation-delay: -.33s;
+    animation-delay: -.33s;
+}
+
+@keyframes d {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    25% {
+        background-color: #cbd6e2;
+        -webkit-transform: translateY(0.25em);
+        transform: translateY(0.25em);
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    75% {
+        background-color: #cbd6e2;
+        -webkit-transform: translateY(-0.25em);
+        transform: translateY(-0.25em);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes d {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    25% {
+        background-color: #cbd6e2;
+        -webkit-transform: translateY(0.25em);
+        transform: translateY(0.25em);
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    75% {
+        background-color: #cbd6e2;
+        -webkit-transform: translateY(-0.25em);
+        transform: translateY(-0.25em);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

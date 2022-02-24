@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  outline: none; }
+
+body {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f034a2), to(#f3705e)) no-repeat fixed;
+  background: -webkit-linear-gradient(bottom, #f034a2, #f3705e) no-repeat fixed;
+  background: -o-linear-gradient(bottom, #f034a2, #f3705e) no-repeat fixed;
+  background: linear-gradient(0deg, #f034a2, #f3705e) no-repeat fixed;
+  padding-top: 30px; }
+
+.header {
+  text-align: center;
+  padding: 18px 0;
+  margin-bottom: 30px; }
+  .header a {
+    display: inline-block; }
+    .header a .logo {
+      max-width: 122px;
+      width: 100%; }
+
+.profile-update {
+  margin-bottom: 30px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  padding: 25px 20px;
+  border-radius: 10px; }
+  .profile-update .pu-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #444648;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .profile-update .form-group .input_label {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #444648; }
+  .profile-update .form-group .selectGender {
+    margin-bottom: 10px; }
+    .profile-update .form-group .selectGender .genInput input {
+      display: none; }
+    .profile-update .form-group .selectGender .genInput input:checked + label:before {
+      border: 5px solid #ec0389; }
+    .profile-update .form-group .selectGender .genInput label {
+      padding-left: 25px;
+      position: relative;
+      margin-bottom: 0;
+      cursor: pointer; }
+      .profile-update .form-group .selectGender .genInput label:before {
+        position: absolute;
+        content: "";
+        top: 3px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #ec0389; }
+  .profile-update .form-group .update-btn {
+    background: -webkit-linear-gradient(45deg, #ec0389, #f15c26);
+    background: -o-linear-gradient(45deg, #ec0389, #f15c26);
+    background: linear-gradient(45deg, #ec0389, #f15c26);
+    border: none;
+    padding: 10px 20px; }
